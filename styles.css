@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed; /* 设置背景图片 */
+    background-size:cover;
+    
+}
+
+.poster {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 2000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden; /* 隐藏溢出的模糊效果 */
+}
+
+/* 头部样式 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(189, 169, 169, 0.3); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.header .logo {
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+/* 内容区域样式 */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: large;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+.box {
+    background: rgba(162, 151, 217, 0.5); /* 半透明背景 */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* 毛玻璃效果 */
+}
+
+.box h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.image-container img {
+    width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 底部样式 */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(189, 169, 169, 0.3); /* 半透明背景 */
+    backdrop-filter: blur(100px); /* 毛玻璃效果 */
+    border-top: 1px solid rgba(247, 247, 247, 0.5);
+}
